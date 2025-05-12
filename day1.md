@@ -7,3 +7,5 @@
 ## What I want to learn this week
 - Jenkins pipelines
 - Docker monitoring setup
+
+Lets see what I do in the afternoon!
