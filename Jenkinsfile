@@ -3,14 +3,15 @@ pipeline {
     stages {
         stage('Checkout Repo') {
             steps {
-                sh '''git clone https://github.com/kwapong91/devops-journal.git
-                      git checkout may1-log
+                sh '''
+                    git clone https://github.com/kwapong91/devops-journal.git
+                    git checkout may1-log
               '''
             }
         }
         stage('Run Python Script') {
             steps {
-              sh 'python docker-practice/app.py'
+              sh 'python3 docker-practice/app.py'
             }
         }
         stage('Build Docker Image') {
