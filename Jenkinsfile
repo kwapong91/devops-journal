@@ -3,10 +3,7 @@ pipeline {
     stages {
         stage('Checkout Repo') {
             steps {
-                sh '''
-                    git clone https://github.com/kwapong91/devops-journal.git
-                    git checkout may1-log
-              '''
+                git branch: 'may1-log', url: 'https://github.com/kwapong91/devops-journal.git'
             }
         }
         stage('Run Python Script') {
