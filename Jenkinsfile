@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-              sh 'docker build -t simple_application'
+              sh 'cd docker-practice && docker build -t simple_application .'
             }
         }      
     }
